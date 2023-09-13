@@ -46,7 +46,7 @@ CREATE OR REPLACE TABLE TESTINGDB.PUBLIC.STREAMINGDATA (
 ## Running the sample locally
 
 ```cmd
-./mvnw clean package azure-functions:run
+mvn clean package azure-functions:run
 ```
   - You can test the HTTP trigger using
     - `curl -X POST -H "Content-Type: application/json" -d '{"name":"yourName 8"}' http://localhost:7071/api/snowpipehttptrigger`
@@ -57,7 +57,7 @@ CREATE OR REPLACE TABLE TESTINGDB.PUBLIC.STREAMINGDATA (
 ## Deploy the sample on Azure
 
   - Modify the pom.xml file and change the function properties like functionAppName.
-  - `./mvnw clean package azure-functions:deploy`
+  - `mvn clean package azure-functions:deploy`
 
 > NOTE: please replace '/' with '\\' when you are running on windows.
 

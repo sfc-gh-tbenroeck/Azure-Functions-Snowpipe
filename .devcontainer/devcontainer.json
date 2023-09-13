@@ -1,13 +1,18 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-	"name": "Ubuntu",
+	"name": "Debian",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"image": "mcr.microsoft.com/azure-functions/java:4-java11-core-tools",
 	"features": {
-		"ghcr.io/devcontainers/features/azure-cli:1": {},
-		"ghcr.io/devcontainers/features/java:1": {},
-		"ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "11",
+			"installMaven": true,
+			"jdkDistro": "ms"
+		}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -15,9 +20,6 @@
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	 "forwardPorts": [7071]
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -3,7 +3,7 @@
         "**/target": true
     },
     "azureFunctions.javaBuildTool": "maven",
-    "azureFunctions.deploySubpath": "target/azure-functions/azure-functions-sample",
+    "azureFunctions.deploySubpath": "target/azure-functions/testing-eh-snowpipe",
     "azureFunctions.projectLanguage": "Java",
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
