@@ -1,0 +1,18 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storageaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net",
+        "FUNCTIONS_WORKER_RUNTIME": "java",
+        "AzureWebJobsEventHubSender": "Endpoint=sb://mynamespace.servicebus.windows.net/;SharedAccessKeyName=snowpipe;SharedAccessKey=mysaskey;EntityPath=snowpipe",
+        "AzureWebJobsEventHubName": "snowpipe",
+        "SNOWPIPE_CLIENT_ACCOUNT": "wp000000.west-us-2.azure",
+        "SNOWPIPE_CLIENT_USER": "streamingUser",
+        "SNOWPIPE_CLIENT_PRIVATE_KEY": "daddEGVSASAD--NOT-REAL==",
+        "SNOWPIPE_CLIENT_WAREHOUSE": "XSMALL",
+        "SNOWPIPE_CLIENT_ROLE": "datawriter",
+        "SNOWPIPE_DB_SCHEMA_TABLE": "TESTINGDB.PUBLIC.STREAMINGDATA",
+        "SNOWPIPE_CLIENT_STREAMING_CLIENT": "streamingClient",
+        "SNOWPIPE_CLIENT_STREAMING_CHANNEL": "snowplowEvents",
+        "SNOWPIPE_TABLE_VARIANT_COLUMN": "JSONVALUE"
+    }
+}
